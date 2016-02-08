@@ -1,4 +1,4 @@
-# Week 1
+# COMPUTER-AIDED DESIGN
 
-## Screenshot:
-![Here you should actually see a screenshot](Screenshot 2016-02-05 20.17.26.png)
+
+Coming soon ..
