@@ -6,7 +6,7 @@
 		
 		
 	
-This year (2016) I will participate in the Fabacademy course called "How to make anything" with about 350 other students in over 80 Fablabs all over the world. I will participate at the Fablab Barcelona. On this website I will document my course acitivty and my [final project](final). [Here](http://archive.fabacademy.org/) you can see the student website of the bast years.  
+This year (2016) I will participate in the Fabacademy course called "How to make anything" with about 350 other students in over 80 Fablabs all over the world. I will participate at the Fablab Barcelona. On this website I will document my course acitivty and my [final project](final). The student websites of the bast years you find [here](http://archive.fabacademy.org/).
 
 # About
 
@@ -24,7 +24,7 @@ In 2013 I build the [pixomat](http://www.pixomat.co) a pixel photobooth in a sho
 
 ## So why do I do the fabacademy ?
 
-By doing the fabacademy I want to gain deeper knowledge in the fablab technoligies and get to know other and share knowledge with other makers and other fablabs that I can visit on my fablab tour. I also think it is a good way to focus my energy on a project I have been dreaming to build for a while - [the stickomat](final).
+I want to gain deeper knowledge in the fablab technolgies and get to know other maker and share knowledge and experiences with them  I also think it is a good way to focus my energy on a project I have been dreaming to build for a while - [the stickomat](final).
 
 ## License
 

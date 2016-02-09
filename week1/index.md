@@ -24,18 +24,22 @@ Do a git tutorial.
 
 ##Git Tutorial
 
-I started doing a git tutorial on the website of github.
+I only got into git a couple of weeks earlier and can recommend [this tutorial](http://rogerdudler.github.io/git-guide/). 
 
 
 
-`Inline code`  
-`` `Inline code` ``
 
+`git init`  
+`git clone username@host:/path/to/repository`  
+`git add <filename>`  
+`git commit -m "Commit message"`  
+`git push origin master`  
+`git pull`
 
+Also I am recommending [Macdown ](http://macdown.uranusjr.com/)a open source Markdown editor for Mac. 
 
 
 ## My Website :
-
 
 
 
