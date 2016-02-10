@@ -1,6 +1,6 @@
-#Readme for the github
+#Fablab Academy 2016 - How to make anything
 
-coming soon
+
 
 [BACK to START](start)
 
