@@ -28,22 +28,20 @@ I only got into git a couple of weeks earlier and can recommend [this tutorial](
 
 I also downloaded a couple of desktop git programs like [github desktop](https://desktop.github.com/) and [tower](https://www.git-tower.com/) but decided to use the command line instead.
 
-This are a couple of commandos you have to remember. 
+This are a couple of commandos I had to remember. 
 
 `git init`  
 `git clone username@host:/path/to/repository`  
 `git add <filename>`  
 `git commit -m "Commit message"`  
-`git push origin master`
-
+`git push origin master`  
 `git pull`
 
-If you and up in vim. Type ":" and "wq" to get out of it. 
+If you and up in vim. Type ":" and "q" to get out of it. 
 
-This is the basic workflow.
+This is the basic workflow 
 
 ![](images/basic-usage.svg)
-
 
 
 I created a private github repo for my files and then cloned the fablab barcelona repo as well. 
@@ -55,16 +53,31 @@ I recommend [Macdown](http://macdown.uranusjr.com/) a open source Markdown edito
 
 I am travelling at the moment and I realized that its better to set up your repositories with https instead of ssh because it seems that some hotels or at my lufthansa flight ssh was blocked. 
 
-
+Check what yout remote repository is with 
 `git remote -v`
-`git remote set-url origin https://github.com/ARKopp/fabacademy2016.git`
+
+Change the remote rep to the https address of github
+`git remote set-url origin https://github.com/ARKopp/fabacademy2016.git` 
+
+I still have not figured how it would work in gitlab
+ 
 `git remote set-url origin http://git.fabacademy.org/fabacademy2016/fablabbcn2016.git`
 
+If you want to swith back to ssh you can so with 
+
+`git remote set-url origin git@git.fabacademy.org:fabacademy2016/fablabbcn2016.git`
+
+The workflow for the fabacademy is the following: 
+
+`git pull`
+`git add .`
+`git commit -m "message"`
+`git push`
 
 ## My Website
 
 
-### Markdown to statc html generator
+### Markdown to static html generator
 
 Because I became quite like the Markdown languange and the documentation needs to uploaded to git lab anyway I decided to write all my documentation in Markdown and use a script to generate the html files. 
 
@@ -102,8 +115,8 @@ Then I can look at the website with under this address [http://localhost:8000/](
 4. push to my private git repo
 5. run script to generate html
 6. preview website with [http://localhost:8000/](http://localhost:8000/)
-7. go to my fablabbcn2016/students/375 folder and push to gitlab
+7. go to my fablabbcn2016/students/375 folder first pull and then push to gitlab
 
-#Final Project
+## Final Project
 
-My idea of a [final project](final) is to build a post-it stick machine.
+My idea of a [final project](final) is to build a robotic post-it sticking machine.
