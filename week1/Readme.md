@@ -1,6 +1,6 @@
 
 
-[START HERE](start) / [FINAL PROJECT](final) / [WEEK 1](week1) / [COMPUTER AIDED DESIGN](week2) / [COMPUTER-CONTROLLED-CUTTING](week3) / [ELECTRONICS PRODUCTION](week4) / [3D SCANNING & PRINTING](week5) / [ELECTRONICS DESIGN 1](week6)  / [COMPUTER-CONTROLLED MACHINING](week7) / [EMBEDDED PROGRAMING ](week8) / [MECHANICAL AND MACHINE DESIGN](week9) / [INPUT DEVICES](week10) / [3D MOULDING AND CASTING ](week11) / [OUTPUT DEVICES](week12) /  [COMPOSITES](week13) / [EMBEDDED NETWORKING & COMMUNICATIONS](week14) / [INTERFACE AND APPLICATION PROGRAMMING ](week15) / [APPLICATIONS AND IMPLICATIONS ](week16) / [INVENTION, INTELLECTUAL PROPERTY, AND BUSINESS MODELS](week17) / [PROJECT DEVELOPMENT ](week18) /
+[START HERE](./start) / [FINAL PROJECT](./final) / [WEEK 1](./week1) / [COMPUTER AIDED DESIGN](week2) / [COMPUTER-CONTROLLED-CUTTING](./week3) / [ELECTRONICS PRODUCTION](./week4) / [3D SCANNING & PRINTING](./week5) / [ELECTRONICS DESIGN 1](./week6)  / [COMPUTER-CONTROLLED MACHINING](./week7) / [EMBEDDED PROGRAMING ](./week8) / [MECHANICAL AND MACHINE DESIGN](./week9) / [INPUT DEVICES](./week10) / [3D MOULDING AND CASTING ](./week11) / [OUTPUT DEVICES](./week12) /  [COMPOSITES](./week13) / [EMBEDDED NETWORKING & COMMUNICATIONS](./week14) / [INTERFACE AND APPLICATION PROGRAMMING ](./week15) / [APPLICATIONS AND IMPLICATIONS ](./week16) / [INVENTION, INTELLECTUAL PROPERTY, AND BUSINESS MODELS](week17) / [PROJECT DEVELOPMENT ](./week18) /
 
 
 # Week 1 - Principes and Practics & Projectmanagement 
@@ -119,4 +119,4 @@ Then I can look at the website with under this address [http://localhost:8000/](
 
 ## Final Project
 
-My idea of a [final project](final) is to build a robotic post-it sticking machine.
+My idea of a [final project](./final) is to build a robotic post-it sticking machine.

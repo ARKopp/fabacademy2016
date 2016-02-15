@@ -5,7 +5,7 @@
 
 Februar 10 - Februar 17
 
-
+[Lecture site ](http://academy.cba.mit.edu/classes/computer_cutting/index.html)
 
 ~~~
 *Weeks Assigment*
@@ -48,3 +48,67 @@ Included your design files and photos of your finished project
 
 
 ~~~
+
+## Lecture Notes
+ 
+
+
+Parametic design
+gimp
+clone
+use the software of your machine and fabmodules
+
+### vinyl cutter
+
+not cut with to much and to less force
+
+use the vinyl cutter this week 
+
+
+### Laser Cutter
+
+Screenprint
+
+Holes
+
+Fabmodulde --> not vector but have tone
+
+
+#### Make a Construction Kit
+
+Champber - take a missalignment and alines it  + compresses the material  -> better joint
+
+
+Fairly small window to get the joint 
+
+
+1. Just make the joint
+2. Parametric tools to make parametric design
+3. Use Inkscape, solidworks, fusion350, antimony
+
+
+
+beam diamter speciefied in fab modules
+
+
+laser has to be attend -> it can get on fire
+
+it has to have good exhaust
+
+good card board bow 
+
+structural cardboard
+heavy shipping cardboard
+
+power and speed setting 
+
+tables of setting of materials you use
+
+
+just make any thing on the vinyl and make a parametric construction kit. A set of parts
+
+
+
+
+
+
