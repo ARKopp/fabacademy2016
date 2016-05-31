@@ -1,0 +1,581 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tools &mdash; pySerial 3.0.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+
+  
+    <link rel="stylesheet" href="https://media.readthedocs.org/css/sphinx_rtd_theme.css" type="text/css" />
+  
+
+  
+    <link rel="top" title="pySerial 3.0.1 documentation" href="index.html"/>
+        <link rel="next" title="URL Handlers" href="url_handlers.html"/>
+        <link rel="prev" title="pySerial API" href="pyserial_api.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+
+<!-- RTD Extra Head -->
+
+<!-- 
+Always link to the latest version, as canonical.
+http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="http://pyserial.readthedocs.io/en/latest/tools.html" />
+
+<link rel="stylesheet" href="https://media.readthedocs.org/css/readthedocs-doc-embed.css" type="text/css" />
+
+<script type="text/javascript" src="_static/readthedocs-data.js"></script>
+
+<!-- Add page-specific data, which must exist in the page js, not global -->
+<script type="text/javascript">
+READTHEDOCS_DATA['page'] = 'tools'
+</script>
+
+<script type="text/javascript" src="_static/readthedocs-dynamic-include.js"></script>
+
+<!-- end RTD <extrahead> --></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> pySerial
+          
+
+          
+            
+            <img src="_static/pyserial.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="pyserial.html">pySerial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shortintro.html">Short introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyserial_api.html">pySerial API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-serial.tools.list_ports">serial.tools.list_ports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-serial.tools.miniterm">serial.tools.miniterm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="url_handlers.html">URL Handlers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendix.html">Appendix</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">pySerial</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Tools</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="https://github.com/pyserial/pyserial/blob/master/documentation/tools.rst" class="fa fa-github"> Edit on GitHub</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-serial">
+<span id="tools"></span><h1>Tools<a class="headerlink" href="#module-serial" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-serial.tools.list_ports">
+<span id="serial-tools-list-ports"></span><h2>serial.tools.list_ports<a class="headerlink" href="#module-serial.tools.list_ports" title="Permalink to this headline">¶</a></h2>
+<p>This module can be executed to get a list of ports (<code class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span>
+<span class="pre">serial.tools.list_ports</span></code>). It also contains the following functions.</p>
+<dl class="function">
+<dt id="serial.tools.list_ports.comports">
+<code class="descclassname">serial.tools.list_ports.</code><code class="descname">comports</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#serial.tools.list_ports.comports" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">an iterable that yields <a class="reference internal" href="#serial.tools.list_ports.ListPortInfo" title="serial.tools.list_ports.ListPortInfo"><code class="xref py py-class docutils literal"><span class="pre">ListPortInfo</span></code></a> objects.</td>
+</tr>
+</tbody>
+</table>
+<p>The function returns an iterable that yields <a class="reference internal" href="#serial.tools.list_ports.ListPortInfo" title="serial.tools.list_ports.ListPortInfo"><code class="xref py py-obj docutils literal"><span class="pre">ListPortInfo</span></code></a> objects.</p>
+<p>Items are returned in no particular order. It may make sense to sort the
+items. Also note that the reported strings are different across platforms
+and operating systems, even for the same device.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Support is limited to a number of operating systems. On some
+systems description and hardware ID will not be available
+(<code class="docutils literal"><span class="pre">None</span></code>).</p>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Platform:</th><td class="field-body">Posix (/dev files)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Platform:</th><td class="field-body">Linux (/dev files, sysfs)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Platform:</th><td class="field-body">OSX (iokit)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Platform:</th><td class="field-body">Windows (setupapi, registry)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="serial.tools.list_ports.grep">
+<code class="descclassname">serial.tools.list_ports.</code><code class="descname">grep</code><span class="sig-paren">(</span><em>regexp</em><span class="sig-paren">)</span><a class="headerlink" href="#serial.tools.list_ports.grep" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>regexp</strong> &#8211; regular expression (see stdlib <a class="reference external" href="http://docs.python.org/library/re.html#module-re" title="(in Python v2.7)"><code class="xref py py-mod docutils literal"><span class="pre">re</span></code></a>)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">an iterable that yields <a class="reference internal" href="#serial.tools.list_ports.ListPortInfo" title="serial.tools.list_ports.ListPortInfo"><code class="xref py py-class docutils literal"><span class="pre">ListPortInfo</span></code></a> objects, see also
+<a class="reference internal" href="#serial.tools.list_ports.comports" title="serial.tools.list_ports.comports"><code class="xref py py-func docutils literal"><span class="pre">comports()</span></code></a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Search for ports using a regular expression. Port name, description and
+hardware ID are searched (case insensitive). The function returns an
+iterable that contains the same data that <a class="reference internal" href="#serial.tools.list_ports.comports" title="serial.tools.list_ports.comports"><code class="xref py py-func docutils literal"><span class="pre">comports()</span></code></a> generates, but
+includes only those entries that match the regexp.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="serial.tools.list_ports.ListPortInfo">
+<em class="property">class </em><code class="descclassname">serial.tools.list_ports.</code><code class="descname">ListPortInfo</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>This object holds information about a serial port. It supports indexed
+access for backwards compatibility, as in <code class="docutils literal"><span class="pre">port,</span> <span class="pre">desc,</span> <span class="pre">hwid</span> <span class="pre">=</span> <span class="pre">info</span></code>.</p>
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.device">
+<code class="descname">device</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.device" title="Permalink to this definition">¶</a></dt>
+<dd><p>Full device name/path, e.g. <code class="docutils literal"><span class="pre">/dev/ttyUSB0</span></code>. This is also the
+information returned as first element when accessed by index.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.name">
+<code class="descname">name</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Short device name, e.g. <code class="docutils literal"><span class="pre">ttyUSB0</span></code>.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.description">
+<code class="descname">description</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Human readable description or <code class="docutils literal"><span class="pre">n/a</span></code>. This is also the information
+returned as second element when accessed by index.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.hwid">
+<code class="descname">hwid</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.hwid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Technical description or <code class="docutils literal"><span class="pre">n/a</span></code>. This is also the information
+returned as third element when accessed by index.</p>
+</dd></dl>
+
+<p>USB specific data, these are all <code class="docutils literal"><span class="pre">None</span></code> if it is not an USB device (or the
+platform does not support extended info).</p>
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.vid">
+<code class="descname">vid</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.vid" title="Permalink to this definition">¶</a></dt>
+<dd><p>USB Vendor ID (integer, 0...65535).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.pid">
+<code class="descname">pid</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.pid" title="Permalink to this definition">¶</a></dt>
+<dd><p>USB product ID (integer, 0...65535).</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.serial_number">
+<code class="descname">serial_number</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.serial_number" title="Permalink to this definition">¶</a></dt>
+<dd><p>USB serial number as a string.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.location">
+<code class="descname">location</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.location" title="Permalink to this definition">¶</a></dt>
+<dd><p>USB device location string (&#8220;&lt;bus&gt;-&lt;port&gt;[-&lt;port&gt;]...&#8221;)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.manufacturer">
+<code class="descname">manufacturer</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.manufacturer" title="Permalink to this definition">¶</a></dt>
+<dd><p>USB manufacturer string, as reported by device.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.product">
+<code class="descname">product</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.product" title="Permalink to this definition">¶</a></dt>
+<dd><p>USB product string, as reported by device.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="serial.tools.list_ports.ListPortInfo.interface">
+<code class="descname">interface</code><a class="headerlink" href="#serial.tools.list_ports.ListPortInfo.interface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interface specifc description, e.g. used in compound USB devices.</p>
+</dd></dl>
+
+<p>Comparison operators are implemented such that the <a class="reference internal" href="#serial.tools.list_ports.ListPortInfo" title="serial.tools.list_ports.ListPortInfo"><code class="xref py py-obj docutils literal"><span class="pre">ListPortInfo</span></code></a> objects
+can be sorted by <code class="docutils literal"><span class="pre">device</span></code>. Strings are split into groups of numbers and
+text so that the order is &#8220;natural&#8221; (i.e. <code class="docutils literal"><span class="pre">com1</span></code> &lt; <code class="docutils literal"><span class="pre">com2</span></code> &lt;
+<code class="docutils literal"><span class="pre">com10</span></code>).</p>
+</dd></dl>
+
+<p><strong>Command line usage</strong></p>
+<p>Help for <code class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">serial.tools.list_ports</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>usage: list_ports.py [-h] [-v] [-q] [-n N] [regexp]
+
+Serial port enumeration
+
+positional arguments:
+  regexp         only show ports that match this regex
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -v, --verbose  show more messages
+  -q, --quiet    suppress all messages
+  -n N           only output the N-th entry
+</pre></div>
+</div>
+<p>Examples:</p>
+<ul>
+<li><p class="first">List all ports with details:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>$ python -m serial.tools.list_ports -v
+/dev/ttyS0
+    desc: ttyS0
+    hwid: PNP0501
+/dev/ttyUSB0
+    desc: CP2102 USB to UART Bridge Controller
+    hwid: USB VID:PID=10C4:EA60 SER=0001 LOCATION=2-1.6
+2 ports found
+</pre></div>
+</div>
+</li>
+<li><p class="first">List the 2nd port matching a USB VID:PID pattern:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>$ python -m serial.tools.list_ports 1234:5678 -q -n 2
+/dev/ttyUSB1
+</pre></div>
+</div>
+</li>
+</ul>
+<div class="versionadded">
+<p><span class="versionmodified">New in version 2.6.</span></p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 3.0: </span>returning <code class="docutils literal"><span class="pre">ListPortInfo</span></code> objects instead of a tuple</p>
+</div>
+</div>
+<div class="section" id="module-serial.tools.miniterm">
+<span id="serial-tools-miniterm"></span><span id="miniterm"></span><h2>serial.tools.miniterm<a class="headerlink" href="#module-serial.tools.miniterm" title="Permalink to this headline">¶</a></h2>
+<p>This is a console application that provides a small terminal application.</p>
+<p>Miniterm itself does not implement any terminal features such as VT102
+compatibility. However it may inherit these features from the terminal it is run.
+For example on GNU/Linux running from an xterm it will support the escape
+sequences of the xterm. On Windows the typical console window is dumb and does
+not support any escapes. When ANSI.sys is loaded it supports some escapes.</p>
+<p>The default is to filter terminal control characters, see <code class="docutils literal"><span class="pre">--filter</span></code> for
+different options.</p>
+<p>Miniterm:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>--- Miniterm on /dev/ttyS0: 9600,8,N,1 ---
+--- Quit: Ctrl+]  |  Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---
+</pre></div>
+</div>
+<p>Command line options can be given so that binary data including escapes for
+terminals are escaped or output as hex.</p>
+<p>Miniterm supports <span class="target" id="index-0"></span><a class="rfc reference external" href="https://tools.ietf.org/html/rfc2217.html"><strong>RFC 2217</strong></a> remote serial ports and raw sockets using <a class="reference internal" href="url_handlers.html#urls"><span>URL Handlers</span></a>
+such as <code class="docutils literal"><span class="pre">rfc2217://&lt;host&gt;:&lt;port&gt;</span></code> respectively <code class="docutils literal"><span class="pre">socket://&lt;host&gt;:&lt;port&gt;</span></code> as
+<em>port</em> argument when invoking.</p>
+<p>Command line options <code class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">serial.tools.miniterm</span> <span class="pre">-h</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>usage: miniterm.py [-h] [--parity {N,E,O,S,M}] [--rtscts] [--xonxoff]
+                   [--rts RTS] [--dtr DTR] [-e] [--encoding CODEC] [-f NAME]
+                   [--eol {CR,LF,CRLF}] [--raw] [--exit-char NUM]
+                   [--menu-char NUM] [-q] [--develop]
+                   [port] [baudrate]
+
+Miniterm - A simple terminal program for the serial port.
+
+positional arguments:
+  port                  serial port name
+  baudrate              set baud rate, default: 9600
+
+optional arguments:
+  -h, --help            show this help message and exit
+
+port settings:
+  --parity {N,E,O,S,M}  set parity, one of {N E O S M}, default: N
+  --rtscts              enable RTS/CTS flow control (default off)
+  --xonxoff             enable software flow control (default off)
+  --rts RTS             set initial RTS line state (possible values: 0, 1)
+  --dtr DTR             set initial DTR line state (possible values: 0, 1)
+  --ask                 ask again for port when open fails
+
+data handling:
+  -e, --echo            enable local echo (default off)
+  --encoding CODEC      set the encoding for the serial port (e.g. hexlify,
+                        Latin1, UTF-8), default: UTF-8
+  -f NAME, --filter NAME
+                        add text transformation
+  --eol {CR,LF,CRLF}    end of line mode
+  --raw                 Do no apply any encodings/transformations
+
+hotkeys:
+  --exit-char NUM       Unicode of special character that is used to exit the
+                        application, default: 29
+  --menu-char NUM       Unicode code of special character that is used to
+                        control miniterm (menu), default: 20
+
+diagnostics:
+  -q, --quiet           suppress non-error messages
+  --develop             show Python traceback on error
+</pre></div>
+</div>
+<p>Available filters (<code class="docutils literal"><span class="pre">--filter</span></code> option):</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">colorize</span></code>: Apply different colors for received and echo</li>
+<li><code class="docutils literal"><span class="pre">debug</span></code>: Print what is sent and received</li>
+<li><code class="docutils literal"><span class="pre">default</span></code>: remove typical terminal control codes from input</li>
+<li><code class="docutils literal"><span class="pre">direct</span></code>: do-nothing: forward all data unchanged</li>
+<li><code class="docutils literal"><span class="pre">nocontrol</span></code>: Remove all control codes, incl. <code class="docutils literal"><span class="pre">CR+LF</span></code></li>
+<li><code class="docutils literal"><span class="pre">printable</span></code>: Show decimal code for all non-ASCII characters and replace most control codes</li>
+</ul>
+<p>Miniterm supports some control functions while being connected.
+Typing <code class="kbd docutils literal"><span class="pre">Ctrl+T</span> <span class="pre">Ctrl+H</span></code> when it is running shows the help text:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span>--- pySerial (3.0a) - miniterm - help
+---
+--- Ctrl+]   Exit program
+--- Ctrl+T   Menu escape key, followed by:
+--- Menu keys:
+---    Ctrl+T  Send the menu character itself to remote
+---    Ctrl+]  Send the exit character itself to remote
+---    Ctrl+I  Show info
+---    Ctrl+U  Upload file (prompt will be shown)
+---    Ctrl+A  encoding
+---    Ctrl+F  edit filters
+--- Toggles:
+---    Ctrl+R  RTS   Ctrl+D  DTR   Ctrl+B  BREAK
+---    Ctrl+E  echo  Ctrl+L  EOL
+---
+--- Port settings (Ctrl+T followed by the following):
+---    p          change port
+---    7 8        set data bits
+---    N E O S M  change parity (None, Even, Odd, Space, Mark)
+---    1 2 3      set stop bits (1, 2, 1.5)
+---    b          change baud rate
+---    x X        disable/enable software flow control
+---    r R        disable/enable hardware flow control
+</pre></div>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 2.5: </span>Added <code class="kbd docutils literal"><span class="pre">Ctrl+T</span></code> menu and added support for opening URLs.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 2.6: </span>File moved from the examples to <a class="reference internal" href="#module-serial.tools.miniterm" title="serial.tools.miniterm"><code class="xref py py-mod docutils literal"><span class="pre">serial.tools.miniterm</span></code></a>.</p>
+</div>
+<div class="versionchanged">
+<p><span class="versionmodified">Changed in version 3.0: </span>Apply encoding on serial port, convert to Unicode for console.
+Added new filters, default to stripping terminal control sequences.
+Added <code class="docutils literal"><span class="pre">--ask</span></code> option.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="url_handlers.html" class="btn btn-neutral float-right" title="URL Handlers" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pyserial_api.html" class="btn btn-neutral" title="pySerial API" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2001-2015, Chris Liechti.
+      
+        <span class="commit">
+          Revision <code>bf6d3aa1</code>.
+        </span>
+      
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>Versions</dt>
+        
+          <dd><a href="/en/latest/">latest</a></dd>
+        
+          <dd><a href="/en/stable/">stable</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="//readthedocs.org/projects/pyserial/downloads/pdf/latest/">pdf</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/pyserial/downloads/htmlzip/latest/">htmlzip</a></dd>
+        
+          <dd><a href="//readthedocs.org/projects/pyserial/downloads/epub/latest/">epub</a></dd>
+        
+      </dl>
+      <dl>
+        <dt>On Read the Docs</dt>
+          <dd>
+            <a href="//readthedocs.org/projects/pyserial/?fromdocs=pyserial">Project Home</a>
+          </dd>
+          <dd>
+            <a href="//readthedocs.org/builds/pyserial/?fromdocs=pyserial">Builds</a>
+          </dd>
+      </dl>
+      <hr/>
+      Free document hosting provided by <a href="http://www.readthedocs.org">Read the Docs</a>.
+
+    </div>
+  </div>
+
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'3.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-2.0.3.min.js"></script>
+      <script type="text/javascript" src="https://media.readthedocs.org/javascript/jquery/jquery-migrate-1.2.1.min.js"></script>
+      <script type="text/javascript" src="https://media.readthedocs.org/javascript/underscore.js"></script>
+      <script type="text/javascript" src="https://media.readthedocs.org/javascript/doctools.js"></script>
+      <script type="text/javascript" src="https://media.readthedocs.org/javascript/readthedocs-doc-embed.js"></script>
+
+  
+
+  
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
