@@ -158,3 +158,7 @@ What I learned from that is to better only coat one side of the board at one tim
 ## Feedback
 
 [Twitter](http://www.twitter.com/andreaskopp) me or [email me at andreasrkopp at gmail dot com](mailto:andreasrkopp@gmail.com).
+
+Or chat with me on gitter.
+
+[![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
