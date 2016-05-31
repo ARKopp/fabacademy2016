@@ -10,6 +10,7 @@ I will participate at the Fablab Barcelona but I will try to complete most of th
 
 # About Me
 
+
 Hi, I am Andreas a 33 year old guy from Munich Germany who makes a living tinkering and teaching kids coding and electronics. Also I am building up my own fablab and raspberry pi academy at the moment focused on small and big kids called [erfindergarden](http://www.erfindergarden.de) (erfinder is inventor in German) and plan a Fablab world tour after the academy program with my [Minecraft Hacking workshop](https://raspi-grundlagen-wien.eventbrite.de)
 
 
@@ -45,8 +46,12 @@ I want to gain deeper knowledge in the fablab technolgies, especially electronic
 ## Contact me
 
 Twitter: [@andreaskopp](http://www.twitter.com/andreaskopp)
-Facebook: 
+Facebook: [www.facebook.com/andreaskopp](http://www.facebook.com/andreaskopp)
 Email: [mail@andreaskopp.de](mailto:mail@andreaskopp.de)
+
+Or chat with me on gitter.
+
+[![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
  
 
 ## License
