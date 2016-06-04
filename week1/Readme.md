@@ -186,7 +186,6 @@ Still the part where I have to transfer photos from my phone to the computer and
 
 My idea of a [final project](../final) is to build a robotic post-it sticking machine.
 
-## Projectmanagement
 
 ## Feedback ?
 

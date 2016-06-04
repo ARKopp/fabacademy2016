@@ -8,28 +8,42 @@
 May 25 - June 
 
 
-[Lecture](http://academy.cba.mit.edu/classes/interface_application_programming/index.html), Video
+[Lecture](http://academy.cba.mit.edu/classes/interface_application_programming/index.html), [Video](http://archive.fabacademy.org/archives/2016/master/videos/06-01/index.html
+)
 
+~~~
 
 
 *Weeks Assigment*  
 
 propose a final project that integrates the range of units covered:
-      * what will it do?
-      * who's done what beforehand?
-      * what materials and components will be required?
-      * where will they come from?
-      * how much will it cost?
-      * what parts and systems will be made?
-      * what processes will be used?
-      * what tasks need to be completed?
-      * what questions need to be answered?
-      * what is the schedule?
-      * how will it be evaluated?
+
+* what will it do?
+* who's done what beforehand?
+* what materials and components will be required?
+* where will they come from?
+* how much will it cost?
+* what parts and systems will be made?
+* what processes will be used?
+* what tasks need to be completed?
+* what questions need to be answered?
+* what is the schedule?
+* how will it be evaluated?
  
 projects can be separate or joint, but need to show individual mastery of all of the skills
    where possible, you should make rather than buy the parts of your project
 ~~~
+
+
+
+
+##So what will I do?
+
+Time flies by 
+
+
+
+
 
 
 

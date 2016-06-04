@@ -92,6 +92,10 @@ So this time I first read a couple of articles about I-squared-C to understand i
 I2C needs two data lines. One seriell Clock line (SCL) and one for Data (SDA) and is used for communication for short distances. The speed is 100kbit/s standard and 10kbit/s low-speed mode. 
 
 
+
+
+
+
 ### Node
 
 ![](./images/hello.I2C.45.node.png)
@@ -141,6 +145,8 @@ These are the lines used:
 
 and one line specific for every device:
 * SS (Slave Select) - the pin on each device that the master can use to enable and disable specific devices.
+
+[Here](https://learn.sparkfun.com/tutorials/serial-peripheral-interface-spi) also a great article on Sparkfun.
 
 
 ### Invader Bluetooth
