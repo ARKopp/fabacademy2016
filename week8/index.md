@@ -117,9 +117,15 @@ to install the Attiny support manager for Arduino. Here you find a [tutorial](ht
 
 
 ```
-https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
+
+http://drazzy.com/package_drazzy.com_index.json
 
 ```
+
+
+
+
+
 
  ![](./images/screenshot8.jpg)
 

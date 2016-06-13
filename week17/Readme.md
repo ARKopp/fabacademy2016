@@ -114,9 +114,9 @@ hall effect sensor   |        1          |       1.77 €           |
 10k Resistor         |  		1	        |           ?            |
 1uF Capacitor        |      	1			 |           ?            |
 Bluetooth Modul      |      	1	        |        6.95            |
-			           |        1          |         ?              |
-                     |        1          |                        |
-                     |       1          |                       |
+3V Battery			 |        1          |         ?              |
+Battery Holder       |        1          |                       |
+                     |       1          |                         |
 Smoothcast 305       |      200 g			 |          ?             |
 little neodyne magnet|        1		    |         ?              |
 ***TOTAL*** 			 |             	    |                        |
@@ -198,5 +198,5 @@ Or chat with me on gitter.
 [![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
-[back to top](../week19)
+[back to top](../week17)
 

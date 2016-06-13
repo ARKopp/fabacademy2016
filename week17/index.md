@@ -82,6 +82,8 @@ And also instructables for skateboard and bike speedometers:
 * [Skateboard Speedometer by Invented](https://hackaday.io/project/10286-skateboard-speedometer-by-invented)
 * [Skateboard Longboard Speedometer Project](http://www.creative-science.org.uk/longboard_speedo.html) 
 
+* [Arduino Bike Speedometer](http://www.instructables.com/id/Arduino-Bike-Speedometer/)
+
 
 
 ## What materials and components will be required?  What is their cost?
@@ -89,7 +91,7 @@ And also instructables for skateboard and bike speedometers:
 I am not sure about all components yet because I have not designed the PCB but these are the components I most likely will need. I am thinking about a version with and without a lipo battery. 
 
 
-***Version A (with Lipo)***
+***Version A (with Lipo and Bluetoith)***
 
 Part                 |  Quantity         | Total                  |
 -------------------- |------------------ |----------------------- |
@@ -105,21 +107,20 @@ Smoothcast 305       |      200 g			 |          ?             |
 little neodyne magnet|        1		    |         ?              |
 ***TOTAL*** 			 |             	    |      ***22.90 €***     |
 
-***Version B (with Coin Battery)***
+***Version B (with Coin Battery and Display)***
 
 Part                 |  Quantity         | Total                  |
 -------------------- |------------------ |----------------------- |
-Attiny45V 			 |        1          |       1.23 €           |
+Attiny85 				 |        1          |       1.50 €           |
 hall effect sensor   |        1          |       1.77 €           |
-10k Resistor         |  		1	        |           ?            |
-1uF Capacitor        |      	1			 |           ?            |
-Bluetooth Modul      |      	1	        |        6.95            |
-			           |        1          |         ?              |
-                     |        1          |                        |
-                     |       1          |                       |
+10k Resistor         |  		3	        |           ?            |
+1uF Capacitor        |      	1			 |           ?                 |      
+CR Battery			 |        1          |         ?              |
+Tiny Oled Display    |        1          |                        |
+Battery Holder       |        1          |                        |                                      
 Smoothcast 305       |      200 g			 |          ?             |
 little neodyne magnet|        1		    |         ?              |
-***TOTAL*** 			 |             	    |                        |
+***TOTAL*** 			 |             	    |     ***20***            |
 
 
 
@@ -130,10 +131,10 @@ I hope I can find most electronic parts are in the [fab academy inventory](https
 ## What parts and systems will be made?
 
 
-* Board
-* PCB with Attiny and Bluetooth
+* Skateboard
+* PCB with Attiny85 <del>and bluetooh module v1<del>
 * Hall Sensor close to wheel connected with cable to Attiny
-* iPhone App
+* <del>iPhone App</del>
 
 
 
@@ -198,5 +199,5 @@ Or chat with me on gitter.
 [![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
-[back to top](../week19)
+[back to top](../week17)
 
