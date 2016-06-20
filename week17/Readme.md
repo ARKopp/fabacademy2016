@@ -3,7 +3,7 @@
 [FINAL PROJECT](../final) / [WEEK 1](../week1) / [COMPUTER AIDED DESIGN](../week2) / [COMPUTER-CONTROLLED-CUTTING](../week3) / [ELECTRONICS PRODUCTION](../week4) / [3D SCANNING & PRINTING](../week5) / [ELECTRONICS DESIGN](../week6)  / [COMPUTER-CONTROLLED MACHINING](../week7) / [EMBEDDED PROGRAMING ](../week8) / [MECHANICAL DESIGN](../week9) / [MACHINE DESIGN](../week10) / [INPUT DEVICES](../week11) / [3D MOULDING AND CASTING](../week12) / [OUTPUT DEVICES](../week13) / [COMPOSITES](../week14) / [EMBEDDED NETWORKING & COMMUNICATIONS](../week15) / [INTERFACE AND APPLICATION PROGRAMMING ](../week16) / [APPLICATIONS AND IMPLICATIONS ](../week17) / [INVENTION, INTELLECTUAL PROPERTY, AND BUSINESS MODELS](../week18) / [PROJECT DEVELOPMENT ](../week19)
 
 
-# Week 17 - APPLICATIONS AND IMPLICATIONS (WIP)
+# Week 17 - APPLICATIONS AND IMPLICATIONS
 
 May 25 - June 2
 
@@ -37,7 +37,8 @@ projects can be separate or joint, but need to show individual mastery of all of
 
 ## What will you do?
 
-I want to make a low cost fablabable skateboard and bike speedometer.  
+I want to make a low cost fablabable skateboard and bike speedometer and a skateboard. I will use the low cost mini chip Attiny and make my own pcb board and make a waterproof housing for it. 
+
 
 ## Who's done what beforehand?
 
@@ -82,6 +83,8 @@ And also instructables for skateboard and bike speedometers:
 * [Skateboard Speedometer by Invented](https://hackaday.io/project/10286-skateboard-speedometer-by-invented)
 * [Skateboard Longboard Speedometer Project](http://www.creative-science.org.uk/longboard_speedo.html) 
 
+* [Arduino Bike Speedometer](http://www.instructables.com/id/Arduino-Bike-Speedometer/)
+
 
 
 ## What materials and components will be required?  What is their cost?
@@ -89,58 +92,58 @@ And also instructables for skateboard and bike speedometers:
 I am not sure about all components yet because I have not designed the PCB but these are the components I most likely will need. I am thinking about a version with and without a lipo battery. 
 
 
-***Version A (with Lipo)***
+***Version A (with Lipo and Bluetooth)***
 
 Part                 |  Quantity         | Total                  |
 -------------------- |------------------ |----------------------- |
-Attiny45V 			 |        1          |       1.23 €           |
+Attiny85 			    |        1          |       1.45 €           |
 hall effect sensor   |        1          |       1.77 €           |
 10k Resistor         |  		1	        |           ?            |
 1uF Capacitor        |      	1			  |           ?            |
-Bluetooth Modul        |      	1	     |        6.95            |
-USB	Connector         |        1          |         ?              |
+Bluetooth Modul      |      	1	        |        6.95            |
+USB	 Connector         |        1          |         ?              |
 Lipo Charger Adafruit|        1          |        6.95 €          |
 LipBattery 2000mAh   |        1          |       12.95 €          |
 Smoothcast 305       |      200 g			 |          ?             |
 little neodyne magnet|        1		    |         ?              |
 ***TOTAL*** 			 |             	    |      ***22.90 €***     |
 
-***Version B (with Coin Battery)***
+***Version B (with Coin Battery and Display)***
 
 Part                 |  Quantity         | Total                  |
 -------------------- |------------------ |----------------------- |
-Attiny45V 			 |        1          |       1.23 €           |
+[Attiny85 ](http://www.digikey.de/product-detail/de/atmel/ATTINY85-20SUR/ATTINY85-20SURDKR-ND/3789090)				 |        1          |       1.45 €           |
 hall effect sensor   |        1          |       1.77 €           |
-10k Resistor         |  		1	        |           ?            |
-1uF Capacitor        |      	1			 |           ?            |
-Bluetooth Modul      |      	1	        |        6.95            |
-3V Battery			 |        1          |         ?              |
-Battery Holder       |        1          |                       |
-                     |       1          |                         |
-Smoothcast 305       |      200 g			 |          ?             |
+10k Resistor         |  		4	        |           ?            |
+1uF Capacitor        |      	1			 |           ?            |      
+CR Battery			 |        1          |         ?              |
+SMD LEDs             |        2          |         ?              |
+[Tiny Oled 			 ]([Tiny Oled Display ](http://www.ebay.de/itm/0-96-I2C-IIC-SPI-Serial-128X64-White-OLED-LCD-LED-Display-Module-for-Arduino-/301952319659?var=&hash=item464dc2c0ab:m:mH-wZvDBRY4fypP9_rU_-sw) )|        1          |     4,90 €              | 
+Battery Holder       |        1          |                        |                                      
 little neodyne magnet|        1		    |         ?              |
-***TOTAL*** 			 |             	    |                        |
+***TOTAL*** 			 |             	    |     ***ca 11 €***            |
 
 
 
 ## Where will they come from?
 
-I hope I can find most electronic parts are in the [fab academy inventory](https://docs.google.com/spreadsheets/d/1U-jcBWOJEjBT5A0N84IUubtcHKMEMtndQPLCkZCkVsU/pub?single=true&gid=0&output=html). I can source them from digikey or amazon. In the future I will also buy parts from ebay because of the high shipping cost of digikey. Also I got some bamboo for the Skateboard and just got the wheels, bearings and axles from my old Penny board. In the future I plan to do all components of the skateboard myself and only by the bearings.
+I hope I can find most electronic parts are in the [fab academy inventory](https://docs.google.com/spreadsheets/d/1U-jcBWOJEjBT5A0N84IUubtcHKMEMtndQPLCkZCkVsU/pub?single=true&gid=0&output=html). I can source them from digikey or amazon if I need it quick. In the future I will also buy parts from ebay because of the high shipping cost of digikey. Also I got some bamboo for the Skateboard and just got the wheels, bearings and axles from my old Penny board. In the future I plan to do all components of the skateboard myself and only buy the bearings.
 
 ## What parts and systems will be made?
 
 
-* Board
-* PCB with Attiny and Bluetooth
-* Hall Sensor close to wheel connected with cable to Attiny
-* iPhone App
+* Skateboard
+* PCB with Attiny85 <del>and bluetooh module v1<del>
+* Hall Sensor Breakout close to the wheel connected with cable to Attiny#
+* skateboard mount
+* case
+* <del>iPhone App</del>
 
 
 
 ## What processes will be used?
 
 * 3D Design
-* Mechanical Design
 * 3D Printing
 * PCB Designing
 * Soldering
@@ -160,7 +163,11 @@ I hope I can find most electronic parts are in the [fab academy inventory](https
 * Sourcing and deciding on all components
 * 1st Arduino Prototype
 * Get the Hal Sensor on a little breakout board close to the wheel
-* Programming Arduino Code
+* Mill the boards 
+* Arduino Code
+* Design Mount and Case
+* Skateboard Mount 3D Print
+* Invader Case 3D Print
 * Design App
 * Programm App
 * Designing and Making Weather Proof Enclosure
@@ -168,24 +175,25 @@ I hope I can find most electronic parts are in the [fab academy inventory](https
 
 ## What questions need to be answered?
 
-How to power the sensor board. Will I use a lipo or a coin battery? How to communicate between the board and the app. Bluetooth or wifi? Or do i also integrate a tiny screen. Is a Attiny enough or a Atmega? Do I include a Lipo charger
+How to power the sensor board. Will I use a lipo or a coin battery? How to communicate between the board and the app. Bluetooth or wifi? Or do i also integrate a tiny screen. Is a Attiny enough or a Atmega? Do I include a Lipo charger. How to communicate between the 
 
 ## What is the schedule?
 
-6 - 12 June: 1st Arduino Prototype Programming Interrupts, Attiny Board Design, Soldering
+6 - 12 June: 1st Arduino Prototype Programming Interrupts, Attiny Board Design, Milling, Soldering, Desgining Interface, Programming 
 
-13 - 17 June: 3D Printing, Molding and casting water proof case iphone and Anroid App Programming
 
-17 - 30 June: Long Board, Medium Board, Milling and Composite, Improving, Add Power drill Motor
+13 - 20 June: 3D Printing Case, Put everything together, Make Video
+
+20 - 30 June: Long Board, Medium Board, Milling and Composite, Make Board Smaller, Molding and casting water proof case
 
 30 - 8 July: Finish Documenting 
 
 
 ## How will it be evaluated? 
 
-I think that means. How do I know if I have succeeded or failed?
+I think that means, how do I know if I have succeeded or failed?
 
-For me I already learned so much in the last 5 month. I want to have a fist working prototype of the whole system I can then take and make workshops with it and improve up on that. 
+For me I already learned so much in the last 5 month. I want to have a firs and make workshops with it.
 
 
 ## Feedback

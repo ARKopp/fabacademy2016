@@ -116,9 +116,9 @@ The process of designing, milling and soldering took me a whole day. In the end 
 
 ***Update 11. June***
 
-It took my like 4 hours again to solder my Speedinvader and I needed 4 jumpers to debug. Now I know I only should use small jumpers and not big cables.
+It took me like 4 hours again to solder my Speedinvader and I needed 4 jumpers to debug it. Now I know I only should use small jumpers and not big cables and be very careful to not rip of the lines when trying to cut of the jumpers. 
 
-After bootloading I tested the invader first with a Arduino blink code and then managed to find a code in c for the display and got it running. Still I did not got it to run with Arduino because some libraries where to recognized.
+After bootloading I tested the invader first with a Arduino blink code and then managed to find a code in c for the display and got it running. Still I did not got it to run with Arduino because some libraries were to recognized. They are special libaries for the Attiny from 
 
 
 ```
@@ -138,37 +138,102 @@ avrdude -c avrisp2 -p t85 -U flash:w:"main.hex":a
 
 ![](./images/image5.jpg)
 
-I am not sure if the coincell works yet. So I made a new design and added a voltage regulator for 5V to it.
+I am not sure if the coin cell works yet. So I made a new design and added a 5V voltage regulator 5V to it to get get the Volts of 2 3V Batteries from 6V to 5V.
 
 ***Update 12. June***
 
 [This link](http://www.instructables.com/id/ATTiny85-connects-to-I2C-OLED-display-Great-Things/) from instructables was a great help in getting the Arduino code working. The two sketches and the libraries worked right away. 
 
-I thought about an interface but could not find a working library for a big font so I first decided to show RPM, km/h, mph and max speed in kmh.
+I thought about an interface to show a big number in the middle of the screen but could not find a working library for a big font so I first decided to show RPM, km/h, mph and max speed in kmh.
 
 To get from RPM to km/h you just need to measure the range of the wheel in m and multiply it with the RPMS times 3,6 to get to km/h.
 
 
-Also I made a test with a power supply with 3V and 200 ma and I got the screen working so I wont need to add a voltage regulator and and two 3V batteries. 
+Also I made a test with a power supply with 3V and 200 ma and I got the screen working so I wont need to add a voltage regulator and two 3V batteries. The datasheet of the screen says 3V to 5V. 
+
+Update: I still did not got the screen working with only a coin cell. 
 
 ![](./images/image7.jpg)
 
+![](./images/screenshot6.jpg)
+
 ***Update 13. June***
 
+On Monday I milled the 3rd version of my board. I added a button, and another 1uF capacitor to the design.  I was able to burn the bootloader and program the board but then suddenly I could not program the board anymore. I fixed a small break but did not find another error and could not program it anymore. 
 
-![](./images/screenshot6.jpg)
+
+***Update 14. June***
+
+I had to leave Barcelona for a conference and only had time in the evening to check if the error was with the FTDI Cable or the AVR ISP. First I got the same error with another board but was then able to program it. 
+
+
+***Update 16. June***
+
+I again had to work all day at a conference and was so exhausted in the evening that I took the time to catch up on week 19 lecture videos and [final presentation presentations](http://archive.fabacademy.org/archives/2016/master/videos/06-15/index.html). 
+
+
+***Update 17. June***
+
+I am back in Barcelona! I took a very early morning flight. 
+Today I want t get my final invader working and design a housing. So I checked all the connections and all worked. Ferdi helped me and at least I can now program the chip. But now the LEDs only get power when connecting the ISP Cable. Still there must be some bad solder joint. 
+
+
+
+***Update 18. June***
+
+Today I tried again to get my newer versions working but was not successful. But I got my first board version working and uploaded some new code. I also played around with the code and finally understood how to convert bitmaps into hex and show it on the screen. At the end of the the day I wanted to connect a voltage booster and clipped of the battery holder in the back but this was a bad idea, because the board stopped working again.
+
+Also sometimes I cant program the board when I know that all connections are working. I read that it may be a problem with my USB port. 
+
+
+![](./images/screenshot7.jpg)
+
+***Update 19. June***
+
+Today is the last day to work on the final project before the presentation. I know I should have done demand side time management but the  So I focus on the housing today the slide and the video.
+
+I managed to finish the case fot the speedinvader and got the last invader working. I made the mistake when mirroring the component to not check that the pins are in the correct order.
+
+![](./images/screenshot8.jpg)
+ 
+
+Now I got quite confortable with the Attiny45/85 (with 256 and 512 bytes, 8 pins)  but it would have been easier if I would have used the ATmega328P (2KB, 27 pins) because I could used the same functions and libraries as the Arduino Uno and not look for specil Attiny libraries.  
+
+Still the Attiny85 is the best choice for my kind of project
+[This website](http://highlowtech.org/?p=1695) and this guide on sparfun got my into it more. Here I read about [I2C on the Attiny85](http://playground.arduino.cc/Code/USIi2c). There they mention to use at least 4,7K pullups. But I have to find out how you can do them internally and not need to use them. The project of [Ilya](http://webboggles.com/attiny85-game-kit-assembly-instructions/) did not use pull-up also he got the screen working with 3Volts.
+
+I am realizing that for prototyping it was not smart to do all boards in invader shape. Next time I will make it as small as possible to fit as many boards as possible on the mill.  
+
+Also I will buy a [Tiny AVR programmer](https://www.sparkfun.com/products/11801) for future work with the Attiny.
+
+![](./images/screenshot9.jpg)
+
+
+[This PDF](https://cdn.sparkfun.com/assets/e/9/1/f/5/Tiny_QuickRef_v2.pdf) from Sparfun is great if you want to get into programming with the Attiny. 
+
+
+
+***Update 20. June***
+
+While documenting I watched the final [project presentations from the 17th](http://archive.fabacademy.org/archives/2016/master/videos/06-17/index.html). I really like the the [LED Board](http://archive.fabacademy.org/archives/2016/fablabtorino/students/440/presentation.png) from Torino, [soundshape](http://archive.fabacademy.org/archives/2016/opendot/students/171/presentation.png) and obvisously the projects from Barcelona.[Arnau with his 1984](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/36/presentation.png), Luiz with his [drawing robot](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/20/presentation.png), [Guillaume](http://archive.fabacademy.org/archives/2016/greenfablab/students/365/presentation.png) with Aquaponics and Gregoire with his [pump](http://archive.fabacademy.org/archives/2016/greenfablab/students/13/presentation.png). 
+
+
+[Here](https://github.com/ARKopp/fabacademy2016/tree/master/final/firmware_speedinvader/firmware_speedinvader) you can find my firmware for the speedinvader so far. 
+
 
 ### What is still missing?
 
 
 * <del>Design and mill Hall Breakout v1</del>
 * <del>Program Board v1<del>
-* <del>Code for OLED Display in Arduino<del>
-* Add Condesator and Button v3
-* Mill and solder board v3
-* Design and mill Hall Breakout Double Sided 
+* <del>Code for OLED Display in Arduino</del>
+* <del>Add Condesator and Button v3</del>
+* </Mill and solder board v3</del>
+* </Design and mill Hall Breakout Double Sided</del> 
 * Design Housing
 * 3D Print Housing
+* make slide 
+* make video
 * Design Mold for Housing
 * Mold Housing
 
