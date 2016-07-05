@@ -20,7 +20,7 @@ This week was a group project.
 
 ~~~
 
-To automate our primograph we decided to use a rasbperry pi and a motor controller board. The complete documentation you find on the group page. Here you can find my part of the project and a little introduction using the pi and the explorer hat.
+To automate our primograph we decided to use a rasbperry pi and a motor controller board. The complete documentation you find on the group page and on the pages of Norma and [Elissa.](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/79/) Here you can find my part of the project which was eletronics and software and a little introduction using the pi and the explorer hat.
 
 
 ## Bill of Materials
@@ -110,3 +110,4 @@ Or chat with me on gitter.
 [![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 
+[BACK to TOP](../week10)

@@ -339,7 +339,7 @@ I took the tinkercad file I designed for the wax cut and modified it for 3D Prin
 
 ## Project Files
 
-[Download](https://www.dropbox.com/s/ags1fohzarfpeaw/Screenshot%202016-05-25%2015.35.43.png?dl=0) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TR2ZuRklidk9YbWs&usp=sharing) all project files from this assignment from my Google Drive.
 
 
 ## Learnings

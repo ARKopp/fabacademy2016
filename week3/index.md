@@ -112,7 +112,7 @@ These are the things I used for this assignment:
 * Analog caliper
 * rajet laser Cutter
 * Zing Laser Cutter.
-* wood
+* 4 mm plywood
 
 Normally I would use the [Maker Case Boxmaker](http://www.makercase.com/) then import the files into Corel Draw or Inkscape and make my adjustments there. My experience so far is that the boxes for that you generate with this Boxmaker are not press-fit and you need to do quite some adjusting, so I decided to learn to do this exercise in Inkscape, OpenScad, Antimony and Rhino. Also my goal is to but a website together like the boxmaker for a pressfit box.
 
@@ -132,7 +132,7 @@ First I measured my material with a caliper. With the digital caliper the materi
 
 The I measured the kerf which is the material that the laser burns away. For that I cut a square, then measure the inner dimension of the hole and the outer dimension of the piece. 
 
-Subtract and divide by two: this is the kerf for that material. For the Trotec that was 0,2 mm for the Zing that was 0,2 mm.
+Subtract and divide by two: this is the kerf for that material. For the Trotec that was 0,2 mm for the Zing that was also 0,2 mm.
 
 ![](./images/image_13.jpg)
 
@@ -189,14 +189,10 @@ Then I also used the Zing laser and there the best fit was with 3,5 mm and 3,45 
 
 So it means the notch (width of the tabs) has to be 0.2 mmm wider then the tile.  
 
-I tried to do the parametric kit with Corel Draw but it was very time consuming. You clone a thing and rotate it is not together any more. 
-
-Here is what I came up with. 
+I tried to do the parametric kit with Corel Draw but it was very time consuming. You clone a thing and rotate it and then it is not together any more. 
 
 
-Some project I would love to build upon is the [boxmaker](https://github.com/rahulbot/boxmaker-website) from [@rahulbot](https://twitter.com/rahulbot) or [makeabox.io ](https://github.com/kigster/laser-cutter). http://www.thingiverse.com/thing:1541
-
-http://fab.cba.mit.edu/classes/863.14/people/amanda_ghassaei/pressFit/tiles.html
+Some project I would love to build upon is the [boxmaker](https://github.com/rahulbot/boxmaker-website) from [@rahulbot](https://twitter.com/rahulbot) or [makeabox.io ](https://github.com/kigster/laser-cutter). Or this box frin thingiverse [http://www.thingiverse.com/thing:1541](http://www.thingiverse.com/thing:1541).
 
 
 
@@ -206,15 +202,35 @@ With Corel Draw I was not able to make the it really parametric so I wanted to m
 
 *Update 8. April:* While in Barcelona Ferdi showed me to make my Press Fit really parametric. You can find the file under Project Files. Next step is to make the pencil holder also parametric. The files for my first try you can find in Project Files below. 
 
+
+
 ![](./images/screenshot11.jpg)
 
 
-### Rhino + Grasshopper
+### Making it Parametric with Rhino
 
-I saw that there is a [video tutorial](https://vimeo.com/155032336) how to make a press fit joint but I have not had time to go over it yet. 
+***Update 4. July*** 
+
+I have finally gotten into Rhino and watched the [Tutorial](https://vimeo.com/155032336) of Saverio Sillo on how to make parametric shapes with Rhino.
+
+You first draw the connection you want to make parametric in one file and  define it as a block and save it. Then you open a new file and import the first file. Make sure you select link.
+
+![](./images/screenshot15.jpg)
+
+![](./images/screenshot13.jpg)
 
 
-### Cuting
+
+Then you draw you design and Mirror and copy your joint wherever you want it to be. 
+
+![](./images/screenshot16.jpg)
+
+
+When you want to update your joints you modife the joint in your first file and in your second file click on edit>blocks>update and all joints get updated.
+
+
+
+### Cutting
 
 I took my files from Corel Draw and cut them with the Zing Laser cutter. 
 
@@ -226,7 +242,7 @@ I took my files from Corel Draw and cut them with the Zing Laser cutter.
 
 ### Pencil holder Case
 
-Making this case paremetric.
+I also would like to make this pencil holder design parametric with rhino or Antimony.
 
 Coming soon! 
 
@@ -239,11 +255,17 @@ Coming soon!
 
 ## Project Files
 
-[Download](https://drive.google.com/open?id=0B3iYmii-HJ7TVE5uTWpISnFSUHc) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TVE5uTWpISnFSUHc&usp=sharing) all project files from this assignment from my Google Drive.
 
 ## Tipps and Tricks
 
 This time I used a [batch image processing tool](http://bulkresizephotos.com/)  I had to resize quite some pictures I took with my i-phone and then scaled it down by 20%. 
+
+***Update 4. Juli 2016***
+
+In the meantime I switched to [PhotoBulk](https://itunes.apple.com/de/app/photobulk-watermark-resize/id537211143?mt=12) to batch process my images. Which works great as I only have to drag a bunch of video in the tool and they get renamed, resized and optimized. But still some pictures are too big and I needed to resoize them with the Preview tool of Mac. 
+
+![](./images/screenshot12.jpg)
 
 
 ## Feedback

@@ -435,13 +435,13 @@ Me on the way back down from the Valldaura.
 
 Download all project files from this assignment from my [Google Drive foler.](https://drive.google.com/open?id=0B3iYmii-HJ7TSjJlNzN3SXVEa1U).
 
-Note to me: Need to put the Fabmodules file here. 
+
 
 
 ## Feedback
 
 [Twitter](http://www.twitter.com/andreaskopp) me or [email me at andreasrkopp at gmail dot com](mailto:andreasrkopp@gmailcom).
 
-Or chat with me on gitter.
-
 [![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+[BACK to TOP](../week4)

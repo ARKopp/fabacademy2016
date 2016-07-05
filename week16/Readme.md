@@ -79,38 +79,6 @@ I created a fist app with the ProjectGenerator and then tried got ghet the seria
 
 
 
-
-## Serial + Arduino
-
-Next I 
-
-
-
-
-
-
-## Serial + Processing
-
-We had a review by Ferdi where he eplained how  we could 
-
-
-## Arduino-Scratch Space Invader Game (coming soon)
-
-
-### Hello World
-
-I wanted to make a space invader game and use my Otherduino and control it with a button and then redo a button invader.   
-
-
-## Arduino + Minecraft (coming soon)
-
-
-
-## matplotlib (coming soon)
-
-http://academy.cba.mit.edu/classes/interface_application_programming/matline.py
-
-
 ## Project Files
 
 [Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TcHc2c2s3WVNJUlk&usp=sharing) all project files from this assignment from my Google Drive.

@@ -23,7 +23,7 @@ This weeks [recitation](https://plus.google.com/u/2/events/c4vhem4fhn14d7rjrorh7
 
 
 ~~~
-## Testing the limitation of my 3D Printers
+## Testing the limitations of my 3D Printers
 
 I have 3 [craftbots](https://www.craftunique.com/) from Hungary, 1 Uli2go from the Netherlands, 1 [Kiwi3D ](https://www.sharebot.it/index.php/prodotto/kiwi-3d/)from Italy and 3 Micos from the US in my lab. I already spend quite some testing the limits of these printers.
 
@@ -136,6 +136,9 @@ Raft are both good. I just made it too thick at the craftbot.
 
 * **21 Retract Travel, check retract settings for longer travel**
 
+
+![](./images/image3.jpg)
+
 ## Calibration
 
 Update: During my week in Barcelona Ferdi told me about away how to configure you 3D printer. For that you have to follow [that guide ](http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide/de) and the change some values on your firmware and upload it again. How do modify the firmwar I still have to find out. 
@@ -146,6 +149,8 @@ For the ultimaker2go I am using the Tinker V16.03 firmware and this is the [souc
 
 
 ## 3D QR Code
+
+I wanted to 3D print a QR Code in 3D which you cannnot produce substractivly without painting first a sheet of wood white and then the top black. And even then it would be hard to paint the sides of the QR Codes perfectly black. 
 
 ### Method 1
 
@@ -243,8 +248,7 @@ One limitation I really do not like of my printer is that you only can print one
 
 To tackle this problem I created a Cura Plugin that kicks out a print after the print finishes with the print head. Send me an email and I send it to you it works with the Ultimaker2 and the Craftbot+ so far. 
 
- 
-![](./images/screenshot_12.jpg)
+Send me an email if your interested.
 
 
 
@@ -253,32 +257,81 @@ To tackle this problem I created a Cura Plugin that kicks out a print after the 
 ### Scanning a Person
 
 
-I used an [iSense 3D Scanner](http://www.3dsystems.com/shop/isense) from 3D system that uses the [structure sensor](http://structure.io/) to scan my roommate Marco. You can buy the sensor for i-pad and i-phone. I bought the [i-phone version](http://www.3dmensionals.de/cubify-isense-3d-scanner-fuer-iphone-6) but realized that the i-phone app is pretty bad and I loose the tracking all the time. Also you cannot see the files in the app right away but there is an app from another company called [itSeeze3D](http://itseez3d.com/product.html) with I found scans much better and you also can see the files locally. Unfortunately there does not exist an iphone app. 
+I used an [iSense 3D Scanner](http://www.3dsystems.com/shop/isense) from 3D system that uses the [structure sensor](http://structure.io/) from Occipital. It sends out millions of infrared dots then a infrared camera picks up those dots according of the pulsing of the light on the object the light a depth map is build. By moving the sensor around you can capture the depth map from all sides and it is then stiched together to create a point cloud of your scan which is then transformed into a mesh in the sensors software.  
+
+You can buy the sensor for i-pad and i-phone and the device uses a bunch of build in sensor like the camera sensor, the acceleromter and gyroscope so it knows not only where the position of the object is but also how the camera has moved since its initial positioning. 
+
+
+I bought the [i-phone version](http://www.3dmensionals.de/cubify-isense-3d-scanner-fuer-iphone-6) but realized that the i-phone app is pretty bad and I loose the tracking all the time. Also you cannot see the files in the app right away but there is an app from another company called [itSeeze3D](http://itseez3d.com/product.html) with I found scans much better and you also can see the files locally and can send them to your computer via email. Unfortunately there is no itSeeze3D iphone app yet.
+
+***Limitations of the isense***
+
+On the 3d systems website they say the iSense has a maximum resolution of 0.025 inches or 0.0635 mm but I found on other websites that the resolution is 0.5 mm. The problem with this device is that you cannot objects smaller then 30cm very well. Also you cannnot use a spinning table to scan a smaller object as the sensor uses the gyroscope and needs the ipad/iphone moving around the object. Also it will have problems with objects that are too shiny and has nurbs in the middle. 
 
 ### Bill of materials
 
 * iphone/ipad
-* Scanner
-* Calibrator app 
-* [itSeeze3D app](https://itunes.apple.com/us/app/itseez3d/id888490358?mt=8)
+* [iSenseScanner](https://www.igo3d.com/de/isense-3d-scanner-iphone-6.html)
+* [Calibrator app ](https://itunes.apple.com/us/app/structure-sensor-calibrator/id914275485?mt=8)
+* [itSeeze3D app](https://itunes.apple.com/us/app/itseez3d/id888490358?mt=8) (for ipad only!)
+* another option would be to use the [Skantect Software](http://skanect.occipital.com/)
 
 
+First you need to calibrate the sensor with the sensor calibrator app. Then you walk around the person you want to scan. The app will tell you to move slower when you it loses the connection. The problem with the app from 3D System is you need to connect your iphone to your computer and download the scans out of itunes. 
 
-First you need to calibrate the sensor with the calibration app. Then you walk around the person you want to scan. 
 
-### Postprocessing
+***Other apps for the structure sensor***
+hen 
+As you can build upon the Structure SDK 0.6 there are a couple of other apps you can download. 
 
-Soon to come.
+* [Room Capture](https://itunes.apple.com/us/app/room-capture-structure-sensor/id916501905?mt=8) (ipad)
+* [360 Panorama](https://itunes.apple.com/us/app/360-panorama/id377342622?mt=8) (iphone)
 
+### Postprocessing with Meshmixer
+
+If you use itSeeze3D you can send yourself the stl or obj files of your scan otherwise you need to go to connect your phone to your conn 
+
+I opened the file in [Meshmixer](http://www.meshmixer.com/) a free program from Autodesk and also imported a hulk figure from [thingiverse](http://www.thingiverse.com/thing:421887) (Hulk by [X3RPM](http://www.thingiverse.com/X3RPM/about) is licensed under the Creative Commons - Attribution - Non-Commercial).
+
+![](./images/screenshot_14.jpg)
+
+Then I cut the head of the shoulders with a plane and moved it around and worked on the size and the position of the head until it looked natural. But I realized it would look better if I would make the head disproportional big. If you want to put your own head on the hulk just import your scanned hat and put it over my figure. 
+
+![](./images/screenshot_19.jpg)
+
+***Repair Mesh***
+
+Before the model can be 3D printed it has to be closed completely. I like that Meshmixer has a autorepair function to repair your mesh. You just click on 'Analyse' in the left sidebar and then Inspector>Autorepair all. This was enough to repair all my scans so far. 
+
+![](./images/screenshot_15.jpg)
+![](./images/screenshot_16.jpg)
+
+### Printing the Scan
+
+I wanted to print the hulk with my friends face as big as possible. I took me a coubple of failed prints but in the end I finished it. On the craftbot with 15% infill and 0.2 it takes about 10 hours.
+
+![](./images/screenshot_17.jpg)
+![](./images/screenshot_18.jpg)
+
+![](./images/image5.jpg)
 
 
 ### Scanning a Object
 
-Soon to come. 
+***Update 5. July***
 
-## Scan with 123D Catch
+My classmates all scanned a little object with the Roland MDX-20 Modela and got really great results with resolutions up to 0.05 mm!!. You can find some results on the sites of [Cit](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/139/htm/week_5.html), [Caro](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/346/Week05.htm), [Arnau](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/36/pages/project5.html) or [Joao](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/4/exercise05.html). In blender you can then repair your scan. This process gives you a great detailed scans only the mill/scanner has a $4,495 list price and the scanning process takes way to long. A nice product would be to develop scanner had for the ultimaker or the Othermill. 
 
-Soon to come. 
+
+***Scanner Overview***
+
+A little research into 3D Scanners shows that all newer scanners are using lasers and not a litle needle like the MDX-20 and are also much cheaper. They can scan up to around 0.0635 mm. Here I found a good overviews  
+
+#### Scanning a Object with the isense
+
+To scan an object with the isense you have to place some magazines next to it. 
+Here is a [video tutorial ](http://itseez3d.com/product.html) how to do that. 
+
 
 ## Project Files
 
@@ -288,12 +341,13 @@ Soon to come.
 
 By testing the printers I realized that if you really want to work precisely you need to print this test out before and adjust your design accordingly.
 
+Limitations of the isense. 
 
 
 ## Feedback
 
 [Twitter](http://www.twitter.com/andreaskopp) me or [email me at andreasrkopp at gmail dot com](mailto:andreasrkopp@gmail.com).
- 
-Or chat with me on gitter.
 
 [![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+ 
+[BACK to TOP](../week5)

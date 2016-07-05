@@ -37,7 +37,7 @@ Group Members:
 ### Bill of Tools and Materials
 
  * Rhino and Grasshopper
- * Test Machine: Epilog Legend Laser Cutter
+ * Test Machine: Epilog Laser Cutter
  * Test Materials: black and white Acryl, 3mm
  * Final Machine: Multicam 2000 Laser Cutter
  * Final Materials: MDF Wood,4mm 
