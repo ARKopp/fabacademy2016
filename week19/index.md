@@ -116,4 +116,4 @@ I still need to make the board smaller and figure out if I can run it on 3V with
 I learned that I need do more complete protypes quickly that work. I had one working board finished and then I tried to improve on the battery but I should have made a housing right away and thought about how to position the sensor on the axle.
  
  
- 
+[BACK to TOP](../week19)

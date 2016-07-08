@@ -64,12 +64,12 @@ Email: [mail@andreaskopp.de](mailto:mail@andreaskopp.de)
 After filling out [these questions](https://creativecommons.org/choose/) on the creative commons website I decided to license this website and my work for fabacademy under a Creative Commons Attribution 4.0 International License.
 
 
-The content of [Andreas Kopp](bit.ly/fab16-andreas) on this website except the content off the final project is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+The content of [Andreas Kopp](bit.ly/fab16-andreas) on this website except the content of the final project is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
-The software and hardware of the final project speedometer of [Andreas Kopp](bit.ly/fab16-fabspeed) is licensed under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/).
+The software and hardware of the final project speedometer by [Andreas Kopp](bit.ly/fab16-fabspeed) is licensed under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/).
 
 
 ![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)

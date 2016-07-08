@@ -10,10 +10,6 @@ I will participate at the Fablab Barcelona but I will try to complete most of th
 
 # About Me
 
-<<<<<<< HEAD
-=======
-[![Join the chat at https://gitter.im/ARKopp/fabacademy2016](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
->>>>>>> 438f0bf2c0ffcf09bab205f3589ec7f5e0c7f4aa
 
 Hi, I am Andreas a 33 year old guy from Munich Germany who makes a living tinkering and teaching kids coding and electronics. Also I am building up my own fablab and raspberry pi academy at the moment focused on small and big kids called [erfindergarden](http://www.erfindergarden.de) (erfinder is inventor in German) and plan a Fablab world tour after the academy program with my [Minecraft Hacking workshop](https://raspi-grundlagen-wien.eventbrite.de)
 
@@ -68,12 +64,12 @@ Email: [mail@andreaskopp.de](mailto:mail@andreaskopp.de)
 After filling out [these questions](https://creativecommons.org/choose/) on the creative commons website I decided to license this website and my work for fabacademy under a Creative Commons Attribution 4.0 International License.
 
 
-The content of [Andreas Kopp](bit.ly/fab16-andreas) on this website except the content off the final project is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+The content of [Andreas Kopp](bit.ly/fab16-andreas) on this website except the content of the final project is licensed under [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 
 ![](https://i.creativecommons.org/l/by/4.0/88x31.png)
 
-The software and hardware of the final project speedometer of [Andreas Kopp](bit.ly/fab16-fabspeed) is licensed under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/).
+The software and hardware of the final project speedometer by [Andreas Kopp](bit.ly/fab16-fabspeed) is licensed under [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/).
 
 
 ![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)

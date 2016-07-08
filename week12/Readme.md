@@ -339,7 +339,12 @@ I took the tinkercad file I designed for the wax cut and modified it for 3D Prin
 
 ## Project Files
 
-[Download](https://www.dropbox.com/s/ags1fohzarfpeaw/Screenshot%202016-05-25%2015.35.43.png?dl=0) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TR2ZuRklidk9YbWs&usp=sharing) all project files from this assignment from my Google Drive or directly from here.
+
+
+[darth_vader (tinkercad link)](https://tinkercad.com/things/fdidk7uKTCw)
+
+[darth_vader_mold.stl](./files/darth_vader_mold.stl)
 
 
 ## Learnings
@@ -358,7 +363,5 @@ I took the tinkercad file I designed for the wax cut and modified it for 3D Prin
 ## Feedback
 
 [Twitter](http://www.twitter.com/andreaskopp) me or [email me at andreasrkopp at gmail dot com](mailto:andreasrkopp@gmail.com).
-
-Or chat with me on gitter.
 
 [![Gitter](https://badges.gitter.im/ARKopp/fabacademy2016.svg)](https://gitter.im/ARKopp/fabacademy2016?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)

@@ -140,7 +140,14 @@ What I learned from that is to better only coat one side of the board at one tim
 
 ## Project Files
 
-[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TbWsxOGVrYjhSV0k&usp=sharing) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TbWsxOGVrYjhSV0k&usp=sharing) all project files from this assignment from my Google Drive or directly from here. 
+
+     
+      
+
+[skateboard_file.3dm (rhino) ](./files/skateboard_file.3dm)
+
+[skateboard_file.stl](./files/skateboard_file.stl)
 
 
 ## Learnings
@@ -150,7 +157,6 @@ What I learned from that is to better only coat one side of the board at one tim
 * cover the board when drying to protect from the dust
 * only apply a thin coat of resin
 * use a standing drill to drill holes or cut holes before with laser
-
 
 
 

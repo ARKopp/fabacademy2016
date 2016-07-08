@@ -146,10 +146,7 @@ An that is how you generate the html files.
 You have couple of themes to choose from. I chose the github theme.
 
 ![](images/montage.jpg)
-
-***Update 8. Mai 2016:***
-
-I am working on an own theme to add disqus for comments to my theme. 
+ 
 
 
 ### Preview of Website
@@ -161,7 +158,6 @@ To see how my website looks like in html I am starting a python server in the fa
 Then I can look at the website under this address [http://localhost:8000/](http://localhost:8000/)
 
 ### Workflow
-
 
 
 

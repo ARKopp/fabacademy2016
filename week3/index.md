@@ -255,7 +255,15 @@ Coming soon!
 
 ## Project Files
 
-[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TVE5uTWpISnFSUHc&usp=sharing) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TVE5uTWpISnFSUHc&usp=sharing) all project files from this assignment from my Google Drive or directly from the repository here.
+
+[block1.3dm (rhino joint file)](./files/block1.3dm)
+
+[press_fit_kit.3dm(rhino design file)](./files/press_fit_kit.3dm)
+
+[anytmony_parametric_design.sb (antimony)](./files/anytmony_parametric_design.sb)
+
+[raspberry_pi_logo_vynil_cutter_file.studio3](./files/raspberry_pi_logo_vynil_cutter_file.studio3)
 
 ## Tipps and Tricks
 
@@ -266,6 +274,13 @@ This time I used a [batch image processing tool](http://bulkresizephotos.com/)  
 In the meantime I switched to [PhotoBulk](https://itunes.apple.com/de/app/photobulk-watermark-resize/id537211143?mt=12) to batch process my images. Which works great as I only have to drag a bunch of video in the tool and they get renamed, resized and optimized. But still some pictures are too big and I needed to resoize them with the Preview tool of Mac. 
 
 ![](./images/screenshot12.jpg)
+
+
+## Learnings
+
+* how to make a file parametric
+* test joints
+* vinyl cut
 
 
 ## Feedback

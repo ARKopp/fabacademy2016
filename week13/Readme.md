@@ -355,7 +355,23 @@ Coming soon.
 
 ## Project Files
 
-[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TdHh1VUJGRzdHalE&usp=sharing) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TdHh1VUJGRzdHalE&usp=sharing) all project files I ued for this assignment from my Google Drive. I have uploaded the improved invader_hall and the invader_rgb also to the repository. Also I made an invader with a coin cell battery that I linked here. 
+
+
+
+[invader-rgb_working.brd](.files/invader_rgb/invader-rgb_working.brd)
+
+[invader-rgb_working.sch (save as)](.files/invader_rgb/invader-rgb_working.sch)
+
+[hall_sensor_v2.sch](.files/hall_sensor/hall_sensor_v2.sch)
+
+[invader_vector_final.dxf (file I imported on Dimension 20 Layer)](./files/invader_vector_final.dxf)
+
+[invader_coin2.brd](.files/invader_coin/invader_coin2.brd)   
+
+[invader_coin2.sch (save as) ](.files/invader_coin/invader_coin2.sch)
+
+
 
 
 ## Learnings

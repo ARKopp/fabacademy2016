@@ -81,7 +81,12 @@ I created a fist app with the ProjectGenerator and then tried got ghet the seria
 
 ## Project Files
 
-[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TcHc2c2s3WVNJUlk&usp=sharing) all project files from this assignment from my Google Drive.
+[Download](https://drive.google.com/folderview?id=0B3iYmii-HJ7TcHc2c2s3WVNJUlk&usp=sharing) all project files from this assignment from my Google Drive or directly here from the repository. 
+
+
+[hello.mag.45-circular.py](./files/hall_sensor_circular/hello.mag.45-circular.py)
+
+[speedometer.py](./files/hall_sensor_tkinter/speedometer.py)
 
 
 ## Learnings

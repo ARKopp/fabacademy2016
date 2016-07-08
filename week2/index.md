@@ -139,14 +139,13 @@ I did this model by first draw a rectangle with the Sketch tool and the made off
 
 ![](./images/screenshot3.jpg)
 
-The file of the design you can find [here](./files/stickomat_v1.stl) 
 
 ### Fusion360
 
-After that I  also installed Fusion 360 and [did the bacis training tutorials.](http://fusion360.autodesk.com/learning/learning.html?guid=GUID-CC9A8E39-356C-43EA-9EDD-0E9C1321E0F2)
+After that I also installed Fusion 360 and [did the bacis training tutorials.](http://fusion360.autodesk.com/learning/learning.html?guid=GUID-CC9A8E39-356C-43EA-9EDD-0E9C1321E0F2)
 
 
-### Rhino Mac + Grasshopper (Work in Progress)
+### Rhino Mac + Grasshopper
 
 Since January 10 there is a [WIP Grasshopper Version for Rhino Mac.](http://www.grasshopper3d.com/page/grasshopper-for-mac) To start it you need to type in `ExplicitHistory` in the bar above. In the [forum](http://discourse.mcneel.com/c/grasshopper/grasshopperformac) you can report your bugs. 
 
@@ -154,7 +153,7 @@ Since January 10 there is a [WIP Grasshopper Version for Rhino Mac.](http://www.
 
 
 
-### Rhine Windows + Grasshopper
+### Rhino Windows + Grasshopper
 
 I tried to set up the Windows version of Rhino on my Mac and installed Parallels and bought Windows 10 only to find out that it i better set up Bootcamp and Windows and do not use Paralles. I have not done that yet. 
 
@@ -168,7 +167,7 @@ I have blender already installed but was not able to try it out yet.
 
 *Update 14. April:* 
 
-Finally in Barcelona I was able to play around with Solidworks a bit. 
+Finally in Barcelona I was able to play around with Solidworks a bit. But you really need to install it on Bootcamp and not on Paralles. 
 
 
 ### Antimony
@@ -187,7 +186,6 @@ The file you can find [here](./files/antimony_design.sb).
 I already know it and will try to do something in the laser and the 3d week and also played with it a bit. The [cheatsheet](http://www.openscad.org/cheatsheet/) is great to get started. I still am not confortable with and I hope to to a project with it in the future. 
 
 
-
 ### FreeCad
 
 I already tried it out but did not like the interface. 
@@ -196,12 +194,12 @@ I already tried it out but did not like the interface.
 
 Later during fabacademy I also created an account for the [online CAD Program OnShape](https://cad.onshape.com). There is first [video ](https://www.youtube.com/watch?v=gHhVGUIfS8Q) you can watch ant then there are also several [tutorials](https://cad.onshape.com/help/index.htm#cshid=tutorials) you can go through. 
 
-I really love the program. 
+I really love the program but did not have time to explore it further. 
 
 
 ### Sketchup Pro
 
-Soon to come.
+I did not have time to work with program in the end. 
 
 
 ## Overview of Programs
@@ -223,7 +221,25 @@ Soon to come.
 
 ## Project Files
 
-I will put all the project file in the google drive folder [here](https://drive.google.com/open?id=0B3iYmii-HJ7TMHZmVE1wVGdZOEk). 
+I will put all the project file in the google drive folder [here](https://drive.google.com/open?id=0B3iYmii-HJ7TMHZmVE1wVGdZOEk) or directly here from the repository.
+
+
+
+[stickomat_v2.jpg (2D Sketch)](./files/stickomat_v2.jpg)
+
+
+[stickomat_box.svg](./files/stickomat_box.svg)
+
+
+[link to tinkercad file (use firefox)](https://tinkercad.com/things/gHNLw9qohRZ)
+
+
+[stickomat_v1.123dx (123Design)](./files/stickomat_v1.123dx)
+
+
+[antimony_design.sb (antimony)](./files/antimony_design.sb)
+
+
 
 ## Feedback ?
 

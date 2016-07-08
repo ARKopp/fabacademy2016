@@ -10,7 +10,7 @@
 [Lecture](http://academy.cba.mit.edu/classes/machine_design/index.html), [Video](http://archive.fabacademy.org/archives/2016/master/videos/04-06/index.html)
 
 ~~~
-*Weeks Assigment*
+*Weeks Assignment*
 
 This week was a group project.
 
@@ -20,7 +20,7 @@ This week was a group project.
 
 ~~~
 
-To automate our primograph we decided to use a rasbperry pi and a motor controller board. The complete documentation you find on the group page and on the pages of Norma and [Elissa.](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/79/) Here you can find my part of the project which was eletronics and software and a little introduction using the pi and the explorer hat.
+To automate our primograph we decided to use a raspberry pi and a motor controller board. The video of the working machine you find on the [group page](http://archive.fabacademy.org/archives/2016/fablabbcn2016/docu/ferdi/htm/mtm_primograph.html) and on the pages of [Norma](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/284/10machinedesign.html) and [Elissa](http://archive.fabacademy.org/archives/2016/fablabbcn2016/students/79/) you can find the documentation about how they made the hardware like the box and the gears. Here you can find my part of the project which was electronics and software and a little introduction using the pi and the explorer hat.
 
 
 ## Bill of Materials
@@ -35,16 +35,23 @@ To automate our primograph we decided to use a rasbperry pi and a motor controll
 ## Design
 
 
-The idea is to hit a button and in the middle of our Primograph and be able to change the speed of the motors. 
+The idea is to hit a button and in the middle of our Primograph and be able to change the speed of the motors which moves then the Primograph and draws patterns on a sheet of paper. 
 
 
-## Eletronics preparing the Pi
-
-Make a schematic in Fritzing. 
+![](./images/image1.jpg)
 
 
+## Electronics
 
-## Python Code
+![](./images/image2.jpg)
+
+
+I connected the two motors two the explorer hat board and then the button to pin 9 (MISO) and the led in the button to pin 10 (MOSI). I made this software with Fritzing. Its free to use. Download it [here](http://fritzing.org/download/) and think about a little donation to help the guys out. 
+
+
+![](./images/image5.jpg)
+
+## Code
 
 
 The Explorer HAT uses an output driver chip called the [ULN2003A](http://www.st.com/web/en/resource/technical/document/datasheet/CD00001244.pdf), which contains a set of transistor pairs called a Darlington Array. It transforms the small logic signal of the Pi into something capable of driving much bigger loads, such as motors, steppers, lights and more.
@@ -54,51 +61,121 @@ After a couple of ours wondering why my output does not work I found this:
 
 > The 4 outputs on Explorer can sink 5V, but not source. This means you need to connect your load to one of the 5V pins, and then to the output. When you turn the output on it will connect your circuit to ground, allowing current to flow and your load to turn on. This is the opposite of using a bare Pi GPIO pin, where you might connect to the pin and then to ground; keep this in mind!
 
-In the meantime I have already connected the Button and the Led of the Button to MISO and MOSI. 
+In the meantime I have already connected the Button and the Led of the Button to MISO (pin9) and MOSI (pin10). 
 
-For the 
+The complete code you find here and and under Project Files. What it does is when you hit the button you start the motor and when pressing it again you make the motor go faster until its maximum speed and then you turn in off again.  
+
+```
+import explorerhat
+from gpiozero import Button, LED, Motor, Robot, Buzzer
+from time import sleep
+
+
+button = Button(9)
+led1 = LED(10)
+#buzzer = Buzzer(17)
+
+#motor1 = Motor(forward=19 , backward=20) #gpio zero motor1
+#motor2 = Motor(forward=21 , backward=26) #gpio zero motor2
+
+#robot = Robot(left=(19, 20), right=(21, 26))
 
 
 
-## Motor
+#the explorer hat has already some motor functions build in
+#invert() - Reverses the direction of forwards for this motor
+#forwards( speed ) - Turns the motor "forwards" at speed ( default 100% )
+#backwards( speed ) - Turns the motor "backwards" at speed ( default 100% )
+#speed(-100 to 100) - Moves the motor at speed, from full backwards to full forwards
 
-Also I looked at the Data Sheet of the Motor Driver with is a Dual [H-Bridge](https://en.wikipedia.org/wiki/H_bridge) Current Control Dribver [DRV8833PWP](http://www.ti.com/lit/ds/symlink/drv8833.pdf) and I realized that I could not only control DC Motors but also Stepper Motors and I am also able to control my speed with [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) which is the technique by which you control the speed by turning the motors on an off very fast. 
+#speed_levels = [0, 25, 50, 75, 100]
+speed_levels = [0, 0.25, 0.5, 0.75]
+
+active_speed = 0
+
+
+
+def button_pressed():
+        print("Button pressed")
+        led1.on()
+        explorerhat.light.toggle()
+
+        global active_speed
+        active_speed = (active_speed + 1) % len(speed_levels)
+        explorerhat.motor.forwards(speed_levels[active_speed]) #with explorerhat
+        #motor1.forward(speed_levels[active_speed]))   #with gpio zero Motor
+		#motor2.forward(speed_levels[active_speed]))
+		#robot.forward = (active_speed + 1) % len(speed_levels)
+
+button.when_pressed = button_pressed
+
+while True:
+       sleep(5)
+
+
+
+```
+
+
+
+### Control the Motor
+
+Also I looked at the Data Sheet of the Motor Driver with is a Dual [H-Bridge](https://en.wikipedia.org/wiki/H_bridge) Current Control Driver [DRV8833PWP](http://www.ti.com/lit/ds/symlink/drv8833.pdf) and I realized that I could not only control DC Motors but also Stepper Motors and I am also able to control my speed with [PWM](https://en.wikipedia.org/wiki/Pulse-width_modulation) which is the technique by which you control the speed by turning the motors on an off very fast. 
 
 
 These are the commands for the Motor I can use. 
 
-invert() - Reverses the direction of forwards for this motor
-forwards( speed ) - Turns the motor "forwards" at speed ( default 100% )
-backwards( speed ) - Turns the motor "backwards" at speed ( default 100% )
-speed(-100 to 100) - Moves the motor at speed, from full backwards to full forwards
+invert() - Reverses the direction of forwards for this motor  
+forwards( speed ) - Turns the motor "forwards" at speed ( default 100% )  
+backwards( speed ) - Turns the motor "backwards" at speed ( default 100% )  
+speed(-100 to 100) - Moves the motor at speed, from full backwards to full   forwards
 
 
-## Arcade Button
+### Make everything boot on startup
+
+Because I wanted to make the pi battery powered and make the machine portable I made the program start on startup.
+
+For that you you just to the following in the terminal in your pi:
+
+
+```bash
+sudo crontab -e
+```
+
+insert code with ... 
+
+```
+i
+```
+
+```cron
+@reboot python /home/primogrogaph/motortest4.py
+```
 
 
 
 
 
-## Conr
+![](./images/image3.jpg)
 
-# Make everything boot on startup
-
-Because I wanted to make the pi batterie powered. 
+***Team Primograph - Eva, Me and Elissa at Valldaura after just finishing the machine.*** 
 
 
-To set up the Explorer Hat 
+We were just happy to have something working. When I was visiting the Fablab Turin is saw another primograph version at Casa Jasmina. They just made the gears much smaller (so you dont have so much wobbling around) and they put the motors on the side of the box and made the gears out of plastic and the pencil holder out of aluminum.
 
-Here is the function [refecence](
-https://github.com/pimoroni/explorer-hat/blob/master/documentation/Function-reference.md)
+![](./images/image4.jpg)
 
-## Project Files
+## Project Files 
 
-[Download](https://drive.google.com/file/d/0B3iYmii-HJ7TbEQ3NXBKNlZUTlk/view?usp=sharing) all project files from this assigment from my Google Drive.
+[primograph.py](./files/primograph.py)
+
+[primograph_schematic.fzz (fritzing file)](./files/primograph_schematic.fzz)
+
 
 ## Learnings
 
-* read documentation all details of a documentation 
-* finally made a shematic in Fritzing
+* read documentation in details
+* finally made a schematic in Fritzing
 
 ## Feedback
 
